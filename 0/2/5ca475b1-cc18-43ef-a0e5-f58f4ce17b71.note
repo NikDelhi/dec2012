@@ -13,7 +13,7 @@
 <list><list-item dir="ltr">to open files in tabs use
 <list><list-item dir="ltr">vim -p file1 file2 ...
 </list-item><list-item dir="ltr">or vim -p *.cpp ...etc
-</list-item><list-item dir="ltr">or :tabnew filename
+</list-item><list-item dir="ltr">or :tabnew filename or :tabe filename
 </list-item></list></list-item><list-item dir="ltr">:tabn to go to next tab
 </list-item><list-item dir="ltr">:tabp to go to prev tab
 </list-item><list-item dir="ltr">:tabr to go to first tab(tabrewind)
@@ -24,12 +24,22 @@
 </list-item></list></list-item><list-item dir="ltr">use map to map vim shortcuts to specific keys, forex:
 <list><list-item dir="ltr">map &lt;C-t&gt;&lt;up&gt; :tabr&lt;cr&gt;
 <list><list-item dir="ltr">maps ctrl+up to :tabr
-</list-item></list></list-item></list></list-item><list-item dir="ltr"></list-item></list></note-content></text>
-  <last-change-date>2012-12-16T18:59:32.4192680+05:30</last-change-date>
-  <last-metadata-change-date>2012-12-16T18:59:32.4246790+05:30</last-metadata-change-date>
+</list-item></list></list-item></list></list-item><list-item dir="ltr">use :sp filename to split screen into multiple files, forex:
+<list><list-item dir="ltr">:sp globals.cpp will split the screen into 2 with 1 part displaying whatever was being displayed earlier and the other part displaying globals.cpp
+</list-item><list-item dir="ltr">use Ctrl+w(press w twice) to switch btw screens
+</list-item><list-item dir="ltr">use Ctrl+w s and Ctrl+w v to split horizontally or vertically
+</list-item><list-item dir="ltr">Ctrl+w c to close current window
+</list-item><list-item dir="ltr">Ctrl+w o to close all windows except the current one
+</list-item></list></list-item><list-item dir="ltr">:e filename opens a new file
+</list-item><list-item dir="ltr">:ls displays a list of current buffers
+</list-item><list-item dir="ltr">:b filename to switch to filename
+<list><list-item dir="ltr">:b# chooses last visited file
+</list-item></list></list-item><list-item dir="ltr"></list-item></list></note-content></text>
+  <last-change-date>2012-12-16T19:20:25.9907950+05:30</last-change-date>
+  <last-metadata-change-date>2012-12-16T19:20:25.9961350+05:30</last-metadata-change-date>
   <create-date>2012-12-10T22:56:19.8151510+05:30</create-date>
-  <cursor-position>717</cursor-position>
-  <selection-bound-position>717</selection-bound-position>
+  <cursor-position>549</cursor-position>
+  <selection-bound-position>549</selection-bound-position>
   <width>450</width>
   <height>360</height>
   <x>0</x>
