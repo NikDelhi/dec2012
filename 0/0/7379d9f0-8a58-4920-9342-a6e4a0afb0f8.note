@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Learning C:</title>
+  <text xml:space="preserve"><note-content version="0.1">Learning C:
+
+<list><list-item dir="ltr">union datatype. though not very useful but allows a variable to have variable datatypes.
+</list-item><list-item dir="ltr">enum datatype. hold a list of inter constants and refernce them by names.
+</list-item><list-item dir="ltr">Pointer must point somewhere. a pointer is basically a variable whose value is an address or null. now if we do: 
+<list><list-item dir="ltr">int *x; *x=3   (Illegal because null=3 is invalid).
+</list-item></list></list-item><list-item dir="ltr"></list-item></list></note-content></text>
+  <last-change-date>2012-12-10T22:44:02.8905360+05:30</last-change-date>
+  <last-metadata-change-date>2012-12-10T22:44:02.8905360+05:30</last-metadata-change-date>
+  <create-date>2012-12-10T22:36:42.7291540+05:30</create-date>
+  <cursor-position>179</cursor-position>
+  <selection-bound-position>179</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:Dec2012</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

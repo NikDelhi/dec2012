@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Git and Github:</title>
+  <text xml:space="preserve"><note-content version="0.1">Git and Github:
+
+<list><list-item dir="ltr">github now uses http instead of ssh
+</list-item><list-item dir="ltr">first install git
+</list-item><list-item dir="ltr">to setup first refer the setup guide on github
+</list-item><list-item dir="ltr">then create a repo on github
+</list-item><list-item dir="ltr">then add a remote. a remote is like a pointer to a repo.
+<list><list-item dir="ltr">git remote add remote-name url-to-repo
+</list-item><list-item dir="ltr">origin is default remote-name
+</list-item></list></list-item><list-item dir="ltr">then do a git push remote-name master
+<list><list-item dir="ltr">master is the branch that we r working with locally
+</list-item></list></list-item><list-item dir="ltr">to create branches:
+<list><list-item dir="ltr">git branch branch-name
+</list-item><list-item dir="ltr">git checkout branch-name
+</list-item><list-item dir="ltr">shortcut: git checkout -b branch-name
+</list-item><list-item dir="ltr">to switch git checkout master
+</list-item><list-item dir="ltr">to merge:
+<list><list-item dir="ltr">git checkout master
+</list-item><list-item dir="ltr">git merge branch-name
+</list-item><list-item dir="ltr">to delete git branch -d branch-name
+</list-item></list></list-item></list></list-item><list-item dir="ltr">fetch and pull
+<list><list-item dir="ltr">git pull remote-name branch-name pulls commits from remote-name and stores them in local repo
+<list><list-item dir="ltr">branch-name is usually master
+</list-item></list></list-item><list-item dir="ltr">for fetch:
+<list><list-item dir="ltr">git fetch remote-name fetches new commits from remote-name
+</list-item><list-item dir="ltr">git merge upstream/master merges the new commits into working files</list-item></list></list-item></list></list-item></list></note-content></text>
+  <last-change-date>2012-12-16T18:49:06.9484670+05:30</last-change-date>
+  <last-metadata-change-date>2012-12-16T18:49:06.9525650+05:30</last-metadata-change-date>
+  <create-date>2012-12-11T00:31:53.4618410+05:30</create-date>
+  <cursor-position>538</cursor-position>
+  <selection-bound-position>538</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <open-on-startup>False</open-on-startup>
+</note>
