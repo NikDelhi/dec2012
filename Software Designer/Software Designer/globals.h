@@ -8,3 +8,4 @@
 
 extern int software_target;
 extern int application_target;
+extern int dimensions;
