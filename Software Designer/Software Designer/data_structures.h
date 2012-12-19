@@ -2,8 +2,12 @@
 #define DATA_STRUCTURES_H_INCLUDED
 
 #include <iostream>
+#include <stdio.h>
+#include <ostream>
 #include <algorithm>
 #include <math.h>
+
+using namespace std;
 
 typedef int pair_int[2];
 typedef double triplet[3];

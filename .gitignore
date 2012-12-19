@@ -9,3 +9,11 @@
 *.suo
 *.vcxproj
 *.filters
+*.ilk
+*.pdb
+*.tlog
+*.lastbuildstate
+*.log
+*.obj
+*.idb
+*.pdb
