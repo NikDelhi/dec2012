@@ -11,6 +11,7 @@
 #endif
 
 #include "globals.h"
+#include "data_structures.h"
 
 static void init()
 {
