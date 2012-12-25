@@ -1,5 +1,5 @@
 
-
+/*
 #ifdef _WIN32
 #include <windows.h>
 #endif
@@ -9,6 +9,9 @@
 #else
 #include <GL/glut.h>
 #endif
+*/
+
+#include <GL/glut.h>
 
 #include "globals.h"
 #include "data_structures.h"
@@ -78,7 +81,7 @@ int main(int argc, char *argv[])
 	glutKeyboardFunc(keyboard);
 	glutSpecialFunc(specialKeyboard);
 
-
+	init();
 	glutMainLoop();
 	return 0;
 }

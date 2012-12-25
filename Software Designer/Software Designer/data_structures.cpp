@@ -103,7 +103,7 @@ void vec3 :: set(double a, double b, double c)
     values[2] = c;
 }
 
-ostream& :: operator << (ostream& os, vec3 v)
+ostream& operator << (ostream& os, vec3 v)
 {
     os << v.values[0] << " " << v.values[1] << " " << v.values[2];
     return os;
