@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Companies to look for:</title>
+  <text xml:space="preserve"><note-content version="0.1">Companies to look for: 
+
+<list><list-item dir="ltr">typo3
+</list-item><list-item dir="ltr">mediawiki
+</list-item><list-item dir="ltr">xen
+</list-item><list-item dir="ltr">eclipse</list-item></list></note-content></text>
+  <last-change-date>2013-03-03T18:35:50.1436930+05:30</last-change-date>
+  <last-metadata-change-date>2013-03-03T18:35:50.1469360+05:30</last-metadata-change-date>
+  <create-date>2013-03-03T18:35:18.2014130+05:30</create-date>
+  <cursor-position>0</cursor-position>
+  <selection-bound-position>60</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:gsoc2013</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

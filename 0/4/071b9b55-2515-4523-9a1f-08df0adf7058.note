@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Prime factorization : O(sqrt(N))</title>
+  <text xml:space="preserve"><note-content version="0.1">Prime factorization : O(sqrt(N))
+
+for (int p=2; p &lt;= N/p; p++) {
+        int c = 0;				//c is the exponent of p
+        while (N % p == 0) {
+            N /= p;	
+            c++;
+        }
+  	// do whatever u need to do with p^c  
+}
+
+if( N &gt; 1) {
+
+	// N is one last prime factor, c=1
+	
+}</note-content></text>
+  <last-change-date>2012-12-29T16:05:04.4153570+05:30</last-change-date>
+  <last-metadata-change-date>2012-12-29T16:05:04.4199030+05:30</last-metadata-change-date>
+  <create-date>2012-12-29T16:02:13.2696470+05:30</create-date>
+  <cursor-position>67</cursor-position>
+  <selection-bound-position>67</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:algorithms</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

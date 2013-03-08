@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>gsoc2013 Notebook Template</title>
+  <text xml:space="preserve"><note-content version="0.1">gsoc2013 Notebook Template
+
+Describe your new note here.</note-content></text>
+  <last-change-date>2013-03-03T18:35:26.8366840+05:30</last-change-date>
+  <last-metadata-change-date>2013-03-03T18:35:26.8366840+05:30</last-metadata-change-date>
+  <create-date>2013-03-03T18:35:26.8297820+05:30</create-date>
+  <cursor-position>56</cursor-position>
+  <selection-bound-position>28</selection-bound-position>
+  <width>0</width>
+  <height>0</height>
+  <x>-1</x>
+  <y>-1</y>
+  <tags>
+    <tag>system:template</tag>
+    <tag>system:notebook:gsoc2013</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

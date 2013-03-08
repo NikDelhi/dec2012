@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Algorithms to Remember:</title>
+  <text xml:space="preserve"><note-content version="0.1">Algorithms to Remember: 
+
+<list><list-item dir="ltr">rank query 
+</list-item><list-item dir="ltr">BIT datastructure
+</list-item><list-item dir="ltr">Trie datastructure for searching strings
+</list-item><list-item dir="ltr">using bitmasks for strings or sets where order doesnt matter for reducing down the order to log
+</list-item><list-item dir="ltr">divide and conquer
+</list-item><list-item dir="ltr">using number theory for breaking up a problem into smaller problems
+<list><list-item dir="ltr">like proving f(mn)=f(m)*f(n).
+</list-item></list></list-item><list-item dir="ltr">c++ map is a powerful tool. stores keys in sorted order. logn is the time for insertion or deletion. An alternate in java is TreeMap
+</list-item><list-item dir="ltr"></list-item></list></note-content></text>
+  <last-change-date>2013-03-05T07:10:11.2420890+05:30</last-change-date>
+  <last-metadata-change-date>2013-03-05T07:10:11.2420890+05:30</last-metadata-change-date>
+  <create-date>2013-03-04T02:29:12.6245900+05:30</create-date>
+  <cursor-position>323</cursor-position>
+  <selection-bound-position>461</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:algorithms</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

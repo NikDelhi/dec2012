@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<sync revision="8" server-id="1a0b981d-ad41-4bd2-91dc-260efa38f9ce">
+<sync revision="7" server-id="1a0b981d-ad41-4bd2-91dc-260efa38f9ce">
   <note id="f5ca165e-c782-4d3c-8f1a-7e0a4b992cfb" rev="0" />
   <note id="7379d9f0-8a58-4920-9342-a6e4a0afb0f8" rev="0" />
   <note id="17434040-1118-4586-b43a-6a13f5f705a9" rev="0" />
@@ -14,5 +14,5 @@
   <note id="ab71bc26-69bb-4a04-b521-357a4ecaa2b5" rev="4" />
   <note id="d100cc90-675e-4f8b-9a17-11a8992506a2" rev="5" />
   <note id="fdf8e6d4-a702-4ad8-9eac-a8651630da0d" rev="5" />
-  <note id="05fa28b8-59d4-4b51-8b1b-88700f43889d" rev="8" />
+  <note id="05fa28b8-59d4-4b51-8b1b-88700f43889d" rev="7" />
 </sync>

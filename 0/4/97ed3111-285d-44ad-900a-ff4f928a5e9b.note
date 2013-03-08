@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>fast power iterative version</title>
+  <text xml:space="preserve"><note-content version="0.1">fast power iterative version
+
+
+// Calculates x raised to the y-th power modulo MOD
+long modPow(long x, long y)
+{
+    long r=1, a=x;
+    while (y &gt; 0) {
+        if ( (y&amp;1)==1 ) {		// to find whether y is odd 
+            r = (r * a) % MOD;
+        }
+        a = (a * a) % MOD;
+        y /= 2;
+    }
+    
+    return r;
+}</note-content></text>
+  <last-change-date>2012-12-29T16:01:53.6341120+05:30</last-change-date>
+  <last-metadata-change-date>2012-12-29T16:01:53.6385470+05:30</last-metadata-change-date>
+  <create-date>2012-12-29T15:59:46.3052630+05:30</create-date>
+  <cursor-position>181</cursor-position>
+  <selection-bound-position>206</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:algorithms</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

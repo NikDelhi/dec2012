@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>C(n,k) in O(k)</title>
+  <text xml:space="preserve"><note-content version="0.1">C(n,k) in O(k)
+
+// Modular multiplicative inverse through Fermat's little theorem:
+long modInverse(long x)
+{
+    return modPow(x, MOD-2); //Implementation found in fast 							   power note 
+}
+
+// Modular division x / y, find modular multiplicative inverse of y
+// and multiply by x.
+long modDivision(long p, long q)
+{
+    return (p * modInverse(q)) % MOD;
+}
+
+long C(long n, int k)
+{
+    if (k &gt; n) {
+        return 0;
+    }
+    long p = 1, q = 1;
+    for (int i=1; i&lt;=k; i++) {
+        q = ( q * i) % MOD;
+        p = ( p * (n - i + 1) ) % MOD;
+    }
+    return modDivision( p, q);
+}
+</note-content></text>
+  <last-change-date>2012-12-29T16:07:38.4224860+05:30</last-change-date>
+  <last-metadata-change-date>2012-12-29T16:07:38.4272130+05:30</last-metadata-change-date>
+  <create-date>2012-12-29T16:05:24.5160660+05:30</create-date>
+  <cursor-position>184</cursor-position>
+  <selection-bound-position>189</selection-bound-position>
+  <width>450</width>
+  <height>360</height>
+  <x>0</x>
+  <y>0</y>
+  <tags>
+    <tag>system:notebook:algorithms</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>
