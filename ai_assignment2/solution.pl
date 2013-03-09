@@ -8,36 +8,48 @@ member(X,[_ | T]) :- member(X,T).
 insert_start(X,L1,[X|L1]).
 insert_end(X,[],[X]).
 insert_end(X,[H|T1],[H|T2]) :- insert_end(X,T1,T2).
-
-skip_similar(X,L1,L2) :- skip_similar(X,L1,Hd,L2), Hd=[].
-skip_similar(X,[X],[X],[]).
-skip_similar(X,[Y],[],[Y]).
-skip_similar(X,[Y|T],[],[Y|T]) :- \+(X=Y).
-skip_similar(X,[X|T],[X|Hd],Tl) :- skip_similar(X,T,Hd,Tl).
-insert_random(X,[],[X]) :- write("1st"), write([X]).
-insert_random(X,[Y|T],[X|[Y|T]]) :- \+(X=Y), write("2nd"), write([X|[Y|T]]).
-insert_random(X,[Y|T],[Y|L]) :- \+(X=Y), insert_random(X,T,L), write("3rd"), write(L).
-insert_random(X,T,L) :- skip_similar(X,T,Hd,Tl), \+(Hd=[]), insert_random(X,Tl,L1), append(Hd,L1,L), write("4th"), write(L).
-%insert_random(X,[H|T1],[H|T2]) :- skip_similar(X,T1,Hd,T3), insert_random(X,T3,T4), append(Hd,T4,T2).
-insert(X,L1,L2) :- insert_start(X,L1,L2).
-%perm([],[]).
-perm([X],[X]).
-perm([X|T], L) :- perm(T,L2), insert_random(X,L2,L).
-
-union_single(X, [], [X]).
-union_single(X, L1, L2) :- member(X,L1), perm(L1,L2).
-union_single(X, L1, L2) :- \+member(X,L1), insert_random(X,L1,L3), perm(L3,L2).
-union([], [], []).
-union(L, [], L).
-union([], L, L).
-union([X|T1], L1, L2) :- union_single(X,L1,L3), union(T1,L1,L4), union(L3,L4,L2).
-
-insert_list([X|T],L1,L2) :- insert(X,L1,L2), insert_list(T,L1,L2).
+remove(X,[],[]).
 remove(X,[X|T],T).
 remove(X,[H|T1],[H|T2]) :- remove(X,T1,T2).
 remove_list([],L1,L1).
 %remove_list([X],L1,L2) :- remove()
-remove_list([X|T1],L1,L2) :- remove(X,L1,L2), write(L2), remove_list(T1,L1,L2).
+remove_list([X|T1],L1,L2) :- remove(X,L1,L2), remove_list(T1,L1,L2).
+
+%skip_similar(X,L1,L2) :- skip_similar(X,L1,Hd,L2), Hd=[].
+%%skip_similar(X,[X],[X],[]).
+%%skip_similar(X,[Y],[],[Y]).
+%skip_similar(X,[],[],[]).
+%skip_similar(X,[Y|T],[],[Y|T]) :- \+(X=Y).
+%skip_similar(X,[X|T],[X|Hd],Tl) :- skip_similar(X,T,Hd,Tl).
+%insert_random(X,[],[X]).
+%insert_random(X,[Y|T],[X|[Y|T]]) :- \+(X=Y).
+%insert_random(X,[Y|T],[Y|L]) :- \+(X=Y),  insert_random(X,T,L).
+%insert_random(X,T,L) :- skip_similar(X,T,Hd,Tl), \+(Hd=[]),  insert_random(X,Tl,L1), append(Hd,L1,L).
+%insert_random(X,[H|T1],[H|T2]) :- skip_similar(X,T1,Hd,T3), insert_random(X,T3,T4), append(Hd,T4,T2).
+insert(X,L1,L2) :- insert_start(X,L1,L2).
+%perm([],[]).
+%perm([],[]).
+%perm([X|T], L) :- perm(T,L2), insert_random(X,L2,L).
+perm(L1,L2) :- permutation(L1,L2).
+%union_single(X, [], [X]).
+%union_single(X, L1, L2) :- member(X,L1), perm(L1,L2).
+%union_single(X, L1, L2) :- \+member(X,L1), insert_random(X,L1,L3), perm(L3,L2).
+%union([], [], []).
+%union(L, [], L).
+%union([], L, L).
+%union([X|T1], L1, L2) :- union_single(X,L1,L3), union(T1,L1,L4), union(L3,L4,L2).
+union([],L,L).
+union([X|L1], L2, L3) :- member(X,L2), union(L1,L2,L3).
+union([X|L1], L2, [X|L3]) :- \+(member(X,L2)), union(L1,L2,L3).
+
+intersection([],_,[]).
+intersection([X|L1], L2, [X|L3]) :- member(X,L2), intersection(L1,L2,L3).
+intersection([X|L1], L2, L3) :- \+(member(X,L2)), intersection(L1,L2,L3).
+
+diff([],_,[]).
+diff([X|L1], L2, [X|L3]) :- \+(member(X,L2)), !, diff(L1,L2,L3).
+diff([_|L1], L2, L3) :- diff(L1,L2,L3).
+%insert_list([X|T],L1,L2) :- insert(X,L1,L2), insert_list(T,L1,L2).
 
 % Predicates used: 
 % posrobo(r,l).
